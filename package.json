@@ -1,0 +1,36 @@
+{
+  "name": "go-web-starter",
+  "version": "1.0.0",
+  "repository": "https://github.com/ahmedaly113/artb-web",
+  "author": "ahmedaly113 <ahmedaly113@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "gin": "APP_TEMPLATE_DIR=./dist/templates/ APP_STATIC_DIR=./dist/static/ gin --build ./src/app -x config -x tmp -x pkg -x node_modules -x templates -x static -x .vscode --port 4000 --appPort 8000 --bin dist/gin-bin.gobin --all run",
+    "webpack:dev": "NODE_ENV=development webpack --config webpack.config.ts --watch",
+    "webpack:prod": "NODE_ENV=production webpack --config webpack.config.ts",
+    "dev": "concurrently --kill-others \"npm run gin\" \"npm run webpack:dev\" ",
+    "build": "rm dist -rf ; npm run webpack:prod ; go build  -o dist/app src/app/main.go"
+  },
+  "devDependencies": {
+    "@types/browser-sync": "^0.0.42",
+    "@types/glob": "^7.1.1",
+    "@types/node": "^10.0.3",
+    "@types/webpack": "^4.0.0",
+    "browser-sync": "^2.18.13",
+    "browser-sync-webpack-plugin": "^2.0.0",
+    "concurrently": "^4.0.1",
+    "css-loader": "^1.0.0",
+    "extract-loader": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "glob": "^7.1.2",
+    "html-loader": "^0.5.1",
+    "node-sass": "^4.5.3",
+    "on-build-webpack": "^0.1.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.23.0",
+    "ts-loader": "^3.0.0",
+    "ts-node": "^7.0.0",
+    "typescript": "^2.5.3",
+    "webpack": "^4.0.0"
+  }
+}
