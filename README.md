@@ -1,9 +1,6 @@
-# go-web-starter
+# go-artb-web
 
-[![Build Status](https://travis-ci.org/ahmedaly113/artb-web.svg?branch=master)](https://travis-ci.org/ahmedaly113/artb-web)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ahmedaly113/artb-web.svg)](https://greenkeeper.io/)
-
-This is a starter project for building web applications with Go, HTML, Typescript and SCSS.
+This is based on Go, HTML, Typescript and SCSS.
 
 The setup uses:
 

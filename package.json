@@ -1,8 +1,8 @@
 {
-  "name": "go-web-starter",
+  "name": "go-artb-web",
   "version": "1.0.0",
   "repository": "https://github.com/ahmedaly113/artb-web",
-  "author": "ahmedaly113 <ahmedaly113@gmail.com>",
+  "author": "ahmedaly113 <ahmedaly113@outlook.com>",
   "license": "MIT",
   "scripts": {
     "gin": "APP_TEMPLATE_DIR=./dist/templates/ APP_STATIC_DIR=./dist/static/ gin --build ./src/app -x config -x tmp -x pkg -x node_modules -x templates -x static -x .vscode --port 4000 --appPort 8000 --bin dist/gin-bin.gobin --all run",
